@@ -1,0 +1,17 @@
+# Node modules
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Python (if using in backend)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+
+# SQLite database (if using)
+*.sqlite3
+
+# VS Code
+.vscode/
