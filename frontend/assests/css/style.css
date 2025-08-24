@@ -1,0 +1,85 @@
+/* Base */
+:root{
+  --blue-start:#1e3a8a; --blue-end:#2563eb;
+  --indigo-start:#4c1d95; --indigo-end:#7c3aed;
+  --teal-start:#0f766e; --teal-end:#14b8a6;
+  --page-bg:#eef5ff;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: 'Segoe UI', system-ui, -apple-system, Arial, sans-serif;
+  background: var(--page-bg);
+  color:#0b1220;
+}
+
+/* Hero */
+.hero{
+  padding: 90px 20px 70px;
+  color:#fff;
+  background: radial-gradient(1200px 500px at 20% -10%, #00c2ff33, transparent 60%),
+              radial-gradient(900px 400px at 80% 0%, #00ffcc22, transparent 60%),
+              linear-gradient(135deg, #0d47a1, #0aa6b6);
+  backdrop-filter: saturate(120%);
+  text-align:center;
+}
+.hero h1{ font-size: 2.6rem; font-weight: 800; letter-spacing: .2px; margin: 0 0 10px;}
+.hero p{  font-size: 1.15rem; opacity:.95; margin:0 }
+
+/* Tiles */
+.tile{
+  display:block;
+  border-radius: 18px;
+  text-decoration:none;
+  color:#fff;
+  position:relative;
+  overflow:hidden;
+  box-shadow: 0 10px 24px rgba(0,0,0,.18);
+  transform: translateZ(0);
+  transition: transform .25s ease, box-shadow .25s ease, filter .25s ease;
+}
+.tile:focus-visible{ outline: 3px solid #fff; outline-offset: 3px; }
+
+.tile-blue   { background: linear-gradient(135deg, var(--blue-start),   var(--blue-end)); }
+.tile-indigo { background: linear-gradient(135deg, var(--indigo-start), var(--indigo-end)); }
+.tile-teal   { background: linear-gradient(135deg, var(--teal-start),   var(--teal-end)); }
+
+.tile::after{
+  content:"";
+  position:absolute; inset:-40% -20% auto auto;
+  width:200px; height:200px; border-radius:50%;
+  background: rgba(255,255,255,.12);
+  filter: blur(8px);
+}
+.tile:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 16px 30px rgba(0,0,0,.22);
+  filter: brightness(1.05);
+}
+
+.tile-content{
+  padding: 30px 26px 26px;
+  min-height: 180px;
+  display:flex; flex-direction:column; justify-content:center; align-items:flex-start;
+}
+.tile-icon{
+  font-size: 2rem;
+  line-height:1;
+  margin-bottom: 10px;
+}
+.tile h3{
+  margin: 6px 0 6px;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+.tile p{
+  margin:0; opacity:.95; font-weight:500;
+}
+
+/* Footer (keeps your footer readable on blue pages too) */
+footer, .footer{
+  background:#0f172a;
+  color:#e5e7eb;
+  padding:18px;
+  text-align:center;
+}
