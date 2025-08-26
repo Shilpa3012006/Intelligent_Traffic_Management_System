@@ -76,10 +76,13 @@ body{
   margin:0; opacity:.95; font-weight:500;
 }
 
-/* Footer (keeps your footer readable on blue pages too) */
-footer, .footer{
-  background:#0f172a;
-  color:#e5e7eb;
+/* Footer (with updated background and text color) */
+footer, .footer {
+  background:#bdcbf0;    /* bluish background */
+  color:#000000;         /* grayish text (darker for visibility) */
+  font-weight: 600;     
+  font-size: 15px;      
   padding:18px;
   text-align:center;
+  letter-spacing: 0.3px;
 }

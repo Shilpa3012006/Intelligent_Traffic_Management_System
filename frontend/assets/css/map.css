@@ -1,0 +1,20 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f8ff;
+  margin: 0;
+  padding: 0;
+}
+
+.map-header {
+  background: linear-gradient(to right, #3399ff, #66ccff);
+  color: white;
+  border-radius: 12px;
+  margin: 0 20px;
+  padding: 60px 20px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+#map {
+  border-radius: 12px;
+}

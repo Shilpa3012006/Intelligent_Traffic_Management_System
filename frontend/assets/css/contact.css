@@ -1,0 +1,46 @@
+/* Page background */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f8ff; /* light soft blue */
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+.contact-header {
+  background: linear-gradient(to right, #3399ff, #66ccff);
+  color: white;
+  border-radius: 12px;
+  margin: 0 20px;
+  padding: 60px 20px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* About & Team Section */
+h3 {
+  color: #0066cc;
+  margin-bottom: 15px;
+}
+
+/* Contact Form */
+.contact-form input,
+.contact-form textarea {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.contact-form button {
+  border-radius: 8px;
+  background-color: #3399ff;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #0066cc;
+  transform: translateY(-3px);
+}
